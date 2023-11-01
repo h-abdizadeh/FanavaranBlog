@@ -4,13 +4,24 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+
+    <link href="~/css/mainstyle.css" rel="stylesheet" />
 </head>
-<body style="background-color:#D5FFD0">
+<body>
     @*header*@
-    <header style="background-color:#0C356A; color:#D5FFD0; padding:15px 10px">
+    <header>
         <h1>دبیرستان فنی فناوران</h1>
         <h3>وبلاگ دانش آموزی فناوران</h3>
     </header>
+    @*main menu*@
+    <div class="top-menu">
+        <a><span></span>صفحه نخست</a>
+        <a><span></span>آرشیو</a>
+        <a><span></span>درباره ما</a>
+        <a><span></span>تماس با ما</a>
+
+        <input type="text" placeholder="جستجو..."/>
+    </div>
 
     <div>
         @RenderBody()
@@ -21,7 +32,7 @@
         <h5>
             نشانی : گیلان رودسر رامدشت انتهای کوچه جهاد کشاورزی دبیرستان های حافظ و فناوران
             <br />
-            شماره تماس : 01344885597
+            شماره تماس : 01344885597 
         </h5>
     </footer>
 

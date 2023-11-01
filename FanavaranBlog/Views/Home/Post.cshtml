@@ -1,7 +1,17 @@
-﻿@{
+﻿@model FanavaranBlog.Models.Blog
+
+@{
     ViewData["Title"] = "Post";
     Layout = "~/Views/Shared/_MainLayout.cshtml";
 }
 
-
-<h1>Post</h1>
+<div class="blog">
+    <h1>@Model.Title</h1>
+    <hr />
+    <img src="~/images/blogsImg/@Model.Img" alt="@Model.Title" />
+    <p>
+        @Model.Description
+    </p>
+    <h6>@Model.BlogDate</h6>
+    <h6>@Model.Source</h6>
+</div>

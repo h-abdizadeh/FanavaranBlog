@@ -49,10 +49,59 @@ header {
 .top-menu input{
     padding:5px 10px;
     border-radius:5px;
+    opacity:0.6;
     border:none;
     outline:none;
     position:relative;
     right:60%;
     top:2px;
     font-size:14pt;
+    transition:0.3s;
 }
+
+.top-menu input:focus{
+    border-radius:45px;
+    opacity:1;
+}
+
+
+.grid {
+    width: 70%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:5px;
+    margin: auto;
+
+}
+
+.grid .grid-item{
+    background-color:white;
+    border-radius:10px;
+    aspect-ratio:4/3;
+    text-align:center;
+    padding-top:15px;
+}
+
+.grid .grid-item img{
+    display:block;
+    width:80%;
+    margin:auto;
+    border-radius:5px;
+}
+
+.grid .grid-item p{
+    padding:10px 5px;
+    width:80%;
+    margin:auto;
+    font-style:italic;
+}
+
+    .grid .grid-item a {
+        background-color: #0C356A;
+        color: white;
+        padding:10px 5px;
+        border-radius:5px;
+        box-shadow:0 1px 2px 0 rgb(0, 0, 0, 0.2);
+        margin-top:10px;
+    }
